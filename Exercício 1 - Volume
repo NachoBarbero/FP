@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+  int main(){
+  
+  int volume, comprimento, largura, altura;
+  
+      scanf("%d %d %d", &comprimento, &largura, &altura);
+      volume= comprimento*largura*altura;
+       printf("%d %d %d", volume);
+  
+    return 0;
+  }
