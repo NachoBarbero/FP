@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+  int main(){
+
+  double atraso, prestacao, taxa;
+  
+  //entrada
+  scanf("%lf", &prestacao, &taxa);
+  
+  //processamento
+  atraso= prestacao+(prestacao*(taxa/100));
+  
+  //saída
+  printf("%.2lf", atraso);
+  
+  return 0;
+  }
