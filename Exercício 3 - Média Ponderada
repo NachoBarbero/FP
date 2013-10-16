@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+  int main(){
+
+  double media,nota1,nota2,nota3,nota4;
+
+  //entrada
+  scanf("%lf %lf %lf %lf", &nota1, &nota2, &nota3, &nota4);
+
+  //processamento
+  media= ((nota1*0.1)+(nota2*0.2)+(nota3*0.3)+(nota4*0.4));
+
+  //saída
+ 
+  printf("%.2lf", media);
+
+  return 0;
+  }
