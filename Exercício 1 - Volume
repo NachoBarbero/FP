@@ -6,7 +6,7 @@
   
       scanf("%d %d %d", &comprimento, &largura, &altura);
       volume= comprimento*largura*altura;
-       printf("%d %d %d", volume);
+       printf("%d", volume);
   
     return 0;
   }
