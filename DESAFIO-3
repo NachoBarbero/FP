@@ -1,0 +1,54 @@
+#include<stdio.h>
+
+	int main(){
+	
+	int x,ok=-1,ok2=1,z,y,w,a,b,c;
+	int conta,inverso,cond1,res, verif, test;
+		while(ok<0 || ok2>0)//validação.
+		{
+		printf("Digite uma entrada de 4 digitos:\n");		
+		scanf("%d", &x);		
+		ok=x-1000;
+		ok2=x-9999;
+		if(ok<0 || ok2>0){
+		printf("Digite uma entrada valida\n");
+		}	
+
+				
+		}
+		z=(x%1000);
+		y=z%100;
+		w=y%10;
+		a=(x-z)/1000;
+		b=(z-y)/100;
+		c=(y-w)/10;
+
+		test=w;		
+
+		conta=(a*100)+(b*10)+c;
+		inverso=(c*100)+(b*10)+a;
+		
+		cond1=conta+inverso;
+
+		z=(cond1%100);
+		y=z%10;
+		
+		a=(cond1-z)/100;
+		b=(z-y)/10;
+		c=y;
+		
+		verif=a+(b*2)+(c*3);
+		verif=verif%10;
+		
+		if(test==verif){
+		printf("Conta Valida\n");
+		
+		}
+		
+		else
+		printf("Conta invalida\n");
+
+		
+
+	return 0;
+	}
