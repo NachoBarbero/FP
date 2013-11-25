@@ -1,0 +1,28 @@
+//divisaocomsoma
+#include<stdio.h>
+
+
+	int main(){
+	
+	int num, den,res=0, i=0;
+
+	scanf("%d %d", &num, &den);
+
+	while(res<=num){
+
+	res+=den;
+
+	}
+	res-=den;
+
+	while(res<num){
+
+	res++;
+	i++;
+	}
+	
+
+	printf("%d\n",i);
+
+	return 0;
+	}
